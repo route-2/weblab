@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script> 
+    //find the largest word in a string
+    function longestword(str)
+    {
+        var largest = ""
+        var str = str.split(" ")
+        for(let i =0;i<str.length;i++)
+        {
+            if(str[i].length > largest.length)
+            {
+                largest = str[i]
+            }
+        }
+        return largest
+    }
+    var string = prompt("Enter a string")
+
+    var result = longestword(string);
+
+    document.write(result)
+    
+    
+    
+    
+    
+    
+    </script>
+</body>
+</html>
