@@ -8,23 +8,21 @@
 </head>
 <body>
     <script>
-//store value to a set and retrieve 
+//store values to a map
 
-var temp
-var set = new Set()
+var map = new Map();
 
-var value = prompt("Enterthe number of elements")
-
+var value = prompt("enter the number of key value pairs")
 for(let i =0;i<value;i++)
 {
-    temp = prompt("enter the" + (i+1) + "element")
-    set.add(temp)
+    let temp = prompt("enter value of" + (i+1) + "element")
+    map.set(i,temp)
 }
 
-
-set.forEach( function element(value){
-document.write(value +"<br>")
+map.forEach(element = (key,value) => {
+    document.write("key:" + key + nbsp + "value:" + value + "<br>")
 })
+
 
 
 
