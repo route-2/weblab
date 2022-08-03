@@ -8,23 +8,19 @@
 </head>
 <body>
     <script>
-//store value to a set and retrieve 
-
-var temp
-var set = new Set()
-
-var value = prompt("Enterthe number of elements")
-
-for(let i =0;i<value;i++)
+function firstcap(str)
 {
-    temp = prompt("enter the" + (i+1) + "element")
-    set.add(temp)
+    str = str.split("")
+    for(let i =0;i<str.length;i++)
+    {
+        str[i] = str[i].toUpperCase() + str[i].substr(1)
+        //split the string after first position
+    }
+    return str.join(" ")
 }
+var str = prompt("enter the string")
+document.write(firstcap(str))
 
-
-set.forEach( element = (value)=>{
-document.write(value +"<br>")
-})
 
 
 

@@ -8,23 +8,18 @@
 </head>
 <body>
     <script>
-//store value to a set and retrieve 
-
-var temp
-var set = new Set()
-
-var value = prompt("Enterthe number of elements")
-
-for(let i =0;i<value;i++)
+function wordarray(str)
+let arr = []
 {
-    temp = prompt("enter the" + (i+1) + "element")
-    set.add(temp)
+    arr = str.split("")
+    return arr
 }
+var str = prompt("enter the string")
+document.write(wordarray(str))
 
 
-set.forEach( element = (value)=>{
-document.write(value +"<br>")
-})
+
+
 
 
 

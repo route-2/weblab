@@ -8,28 +8,24 @@
 </head>
 <body>
     <script>
-//store value to a set and retrieve 
+var obj = new Object()
+obj = {
+name:"Ruthu Rao",
+dept:"ise",
+id:100
 
-var temp
-var set = new Set()
 
-var value = prompt("Enterthe number of elements")
 
-for(let i =0;i<value;i++)
-{
-    temp = prompt("enter the" + (i+1) + "element")
-    set.add(temp)
 }
+document.write(Object.values(obj))
 
 
-set.forEach( element = (value)=>{
-document.write(value +"<br>")
-})
 
 
 
 
 
     </script>
+    
 </body>
 </html>
